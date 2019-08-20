@@ -10,11 +10,8 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
-    @State var inLatitude: String = ""
-    @State var inLongitude: String = ""
-    @State var outLatitude: Double = 51.3
-    @State var outLongitude: Double = -0.1
-    let formatter = NumberFormatter()
+    @State var latitude: String = ""
+    @State var longitude: String = ""
     
     var body: some View {
         VStack {
@@ -22,20 +19,11 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding(.top)
             HStack {
-                CoordinateInputView(latitude: $inLatitude, longitude: $inLongitude)
+                CoordinateInputView(latitude: $latitude, longitude: $longitude)
                     .padding()
-                Button(
-                    action: {
-                        self.outLatitude = self.formatter.number(from: self.inLatitude)?.doubleValue ?? 0
-                        self.outLongitude = self.formatter.number(from: self.inLongitude)?.doubleValue ?? 0
-                }) {
-                    Text("Go")
-                        .font(.title)
-                }
-                .padding()
             }
             .padding()
-            MapView(latitude: outLatitude, longitude: outLongitude)
+            MapView(latitude: $latitude, longitude: $longitude)
                 .edgesIgnoringSafeArea(.bottom)
         }
     }

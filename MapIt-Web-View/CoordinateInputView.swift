@@ -15,22 +15,29 @@ struct CoordinateInputView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Latitude:")
+                Text("\(Constants.latitudeText):")
                 Spacer()
-                TextField("Latitude", text: $latitude)
-                    .frame(maxWidth: 150)
+                TextField(Constants.latitudeText, text: $latitude)
+                    .frame(maxWidth: Constants.maxWidth)
                     .multilineTextAlignment(.center)
-                    .border(Color .black)
+                    .border(Constants.borderColor)
             }
             HStack {
-                Text("Longitude:")
+                Text("\(Constants.longitudeText):")
                 Spacer()
-                TextField("Longitude", text: $longitude)
-                    .frame(maxWidth: 150)
+                TextField(Constants.longitudeText, text: $longitude)
+                    .frame(maxWidth: Constants.maxWidth)
                     .multilineTextAlignment(.center)
-                    .border(Color .black)
+                    .border(Constants.borderColor)
             }
         }
+    }
+    
+    struct Constants {
+        static let maxWidth: CGFloat = 150
+        static let borderColor: Color = .black
+        static let latitudeText = "Latitude"
+        static let longitudeText = "Longitude"
     }
 }
 
