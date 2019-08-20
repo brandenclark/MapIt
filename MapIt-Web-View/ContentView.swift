@@ -23,7 +23,7 @@ struct ContentView: View {
                     .padding()
             }
             .padding()
-            MapView(latitude: $latitude, longitude: $longitude)
+            WebView(latitude: $latitude, longitude: $longitude)
                 .edgesIgnoringSafeArea(.bottom)
         }
     }

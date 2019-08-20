@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E0961442305E43700E8C1E1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0961432305E43700E8C1E1 /* MapView.swift */; };
+		4E0961442305E43700E8C1E1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0961432305E43700E8C1E1 /* WebView.swift */; };
 		4E0961462305EB8800E8C1E1 /* CoordinateInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0961452305EB8800E8C1E1 /* CoordinateInputView.swift */; };
 		4EE777922305ACEF00601A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE777912305ACEF00601A34 /* AppDelegate.swift */; };
 		4EE777942305ACEF00601A34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE777932305ACEF00601A34 /* SceneDelegate.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E0961432305E43700E8C1E1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4E0961432305E43700E8C1E1 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		4E0961452305EB8800E8C1E1 /* CoordinateInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateInputView.swift; sourceTree = "<group>"; };
 		4EE7778E2305ACEF00601A34 /* MapIt-Web-View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapIt-Web-View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE777912305ACEF00601A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				4EE777932305ACEF00601A34 /* SceneDelegate.swift */,
 				4EE777952305ACEF00601A34 /* ContentView.swift */,
 				4E0961452305EB8800E8C1E1 /* CoordinateInputView.swift */,
-				4E0961432305E43700E8C1E1 /* MapView.swift */,
+				4E0961432305E43700E8C1E1 /* WebView.swift */,
 				4EE777972305ACF100601A34 /* Assets.xcassets */,
 				4EE7779C2305ACF100601A34 /* LaunchScreen.storyboard */,
 				4EE7779F2305ACF100601A34 /* Info.plist */,
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE777922305ACEF00601A34 /* AppDelegate.swift in Sources */,
-				4E0961442305E43700E8C1E1 /* MapView.swift in Sources */,
+				4E0961442305E43700E8C1E1 /* WebView.swift in Sources */,
 				4EE777942305ACEF00601A34 /* SceneDelegate.swift in Sources */,
 				4EE777962305ACEF00601A34 /* ContentView.swift in Sources */,
 				4E0961462305EB8800E8C1E1 /* CoordinateInputView.swift in Sources */,
